@@ -48,21 +48,6 @@ figure {
   position: relative;
 }
 
-@media only screen and (max-width: 800px) {
-  html {
-      padding: 0;
-      margin: 20px;
-  }
-  .quote {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .quote figcaption {
-    margin-right: 15px;
-  }
-}
-
 .quote figcaption {
   text-align: right;
 }
@@ -91,3 +76,25 @@ footer {
   clear: both;
   font-size: 9px;
 }
+
+@media only screen and (max-width: 800px) {
+    html {
+        padding: 0;
+        margin: 20px;
+    }
+    .quote {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .quote figcaption {
+      margin-right: 15px;
+    }
+  
+    #patch-facts, #great-qualities {
+        max-width: 80%;
+    }
+    webring-banner {
+        margin-bottom:10px;
+    }
+  }
