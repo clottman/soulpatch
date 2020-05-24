@@ -24,14 +24,14 @@ figure {
  margin: auto; 
 }
 
-blockquote {
+.quote {
   background: hsl(255, 78%, 72%);
   border-left: 10px solid hsl(255, 78%, 65%);
   padding: 0.5em 10px;
   quotes: '\201C''\201D''\2018''\2019';
   padding-bottom: 25px;
 }
-blockquote:before {
+.quote blockquote:before {
   color: hsl(255, 78%, 65%);
   content: open-quote;
   font-size: 4em;
@@ -39,7 +39,7 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-blockquote p {
+.quote p {
   display: inline;
 }
 
@@ -49,20 +49,29 @@ blockquote p {
 }
 
 @media only screen and (max-width: 800px) {
+  html {
+      padding: 0;
+      margin: 20px;
+  }
   .quote {
-    max-width: 85%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .quote figcaption {
+    margin-right: 15px;
   }
 }
 
 .quote figcaption {
-  position: absolute;
-  right: 45;
-  bottom: 0;
+  text-align: right;
 }
 
 .centered-image {
   margin: auto;
-  display: block; 
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 #patch-facts {
