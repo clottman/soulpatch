@@ -122,10 +122,6 @@ h2 {
 /* Desktop Styles */
 
 @media (min-width: 800px) {
-  html {
-    margin: 50px;
-    padding: 30px;
-  }
   .column-container {
     flex-direction: row;
   }

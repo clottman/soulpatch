@@ -77,10 +77,10 @@ footer {
   font-size: 9px;
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     html {
-        padding: 0;
-        margin: 20px;
+        margin: 0;
+        padding: 20px;
     }
     .quote {
       max-width: 100%;
