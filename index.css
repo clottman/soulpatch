@@ -1,0 +1,84 @@
+html {
+  font-family: 'Convergence', sans-serif;
+  background-image: linear-gradient(45deg, hsl(255, 78%, 82%), #1fffbd);
+  margin: 50px;
+  padding: 30px;
+}
+
+.glitchButton {
+  position:fixed !important;
+  top:60px !important;
+  right:60px !important;
+}
+
+h1 {
+ font-size: 40px; 
+}
+
+h1, p {
+ text-align: center;
+}
+
+
+figure {
+ margin: auto; 
+}
+
+blockquote {
+  background: hsl(255, 78%, 72%);
+  border-left: 10px solid hsl(255, 78%, 65%);
+  padding: 0.5em 10px;
+  quotes: '\201C''\201D''\2018''\2019';
+  padding-bottom: 25px;
+}
+blockquote:before {
+  color: hsl(255, 78%, 65%);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.quote {
+  max-width: 50%;
+  position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+  .quote {
+    max-width: 85%;
+  }
+}
+
+.quote figcaption {
+  position: absolute;
+  right: 45;
+  bottom: 0;
+}
+
+.centered-image {
+  margin: auto;
+  display: block; 
+}
+
+#patch-facts {
+  max-width: 49%;
+}
+
+#great-qualities {
+  float: right;
+  max-width: 49%;
+}
+
+#patch-facts p, #great-qualities p {
+ text-align: left; 
+}
+footer {
+  margin-top: 400px;
+  clear: both;
+  font-size: 9px;
+}
