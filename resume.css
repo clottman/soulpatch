@@ -200,3 +200,15 @@ h3,
   text-decoration: underline;
   color: #0000ee;
 }
+
+#humans {
+  margin-bottom: 10px;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  margin: auto -8px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
