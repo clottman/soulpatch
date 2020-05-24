@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap");
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+address,
+article,
+aside,
+blockquote,
+canvas,
+dd,
+div,
+dl,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+li,
+main,
+nav,
+noscript,
+ol,
+output,
+p,
+pre,
+section,
+table,
+tfoot,
+ul,
+video {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+img {
+  height: auto;
+  border: 0;
+}
+cite {
+  font-style: normal;
+}
+dl,
+li,
+ul {
+  list-style-type: none;
+}
+
+* {
+  font-family: "PT Serif", serif;
+  line-height: 1.5;
+}
+/* Functional Styles */
+.mar-bottom {
+  margin-bottom: 2rem;
+}
+
+/*  Layout */
+header {
+  padding: 2rem 0;
+}
+.row {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-list-item {
+  margin-bottom: 2rem;
+}
+
+
+.column-skills ul li {
+  margin-bottom: 1rem;
+}
+
+/* Typography */
+h2 {
+  margin-bottom: 1rem;
+}
+
+/* Desktop Styles */
+
+@media (min-width: 800px) {
+  .column-container {
+    flex-direction: row;
+  }
+  .column.column-skills {
+    order: -1;
+    width: 33%;
+    margin-right: 0.5rem;
+  }
+
+  .column.column-experience {
+    width: 66%;
+  }
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    font-size: 0.5rem;
+  }
+  .row {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .column-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-list-item {
+    margin-bottom: 1rem;
+  }
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  .column-skills ul li {
+    margin-bottom: 0.5rem;
+  }
+  header {
+    padding: 1rem 0;
+  }
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  /*  Duplicate the layout for desktop  */
+  .column-container {
+    flex-direction: row;
+  }
+  .column.column-skills {
+    order: -1;
+    width: 40%;
+    margin-right: 0.5rem;
+  }
+
+  .column.column-experience {
+    width: 60%;
+  }
+}
+
+.fake-link {
+    text-decoration: underline;
+    color: #0000EE;
+}
